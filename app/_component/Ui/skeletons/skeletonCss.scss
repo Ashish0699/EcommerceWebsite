@@ -1,0 +1,64 @@
+@import '../../../variables.scss';
+
+.skeleton-wrapper {
+  width: 100%;
+}
+.skeleton-card {
+  background: white;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  border: 1px solid $border-color;
+}
+
+.skeleton-image {
+  aspect-ratio: 1;
+  background: linear-gradient(90deg, $skeleton-base 25%, $skeleton-highlight 50%, $skeleton-base 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+.skeleton-content {
+  padding: 1rem;
+}
+.skeleton-category {
+  width: 30%;
+  height: 1.5rem;
+  background: linear-gradient(90deg, $skeleton-base 25%, $skeleton-highlight 50%, $skeleton-base 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+  border-radius: 9999px;
+  margin-bottom: 0.5rem;
+}
+.skeleton-title {
+  width: 100%;
+  height: 3rem;
+  background: linear-gradient(90deg,$skeleton-base 25%, $skeleton-highlight 50%, $skeleton-base 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+  border-radius: 0.25rem;
+  margin-bottom: 0.5rem;
+}
+.skeleton-price {
+  width: 40%;
+  height: 1.5rem;
+  background: linear-gradient(90deg, $skeleton-base 25%, $skeleton-highlight 50%, $skeleton-base 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+  border-radius: 0.25rem;
+  margin-bottom: 1rem;
+}
+.skeleton-button {
+  width: 100%;
+  height: 2.5rem;
+  background: linear-gradient(90deg, $skeleton-base 25%, $skeleton-highlight 50%, $skeleton-base 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+  border-radius: 0.25rem;
+}
+@keyframes shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
