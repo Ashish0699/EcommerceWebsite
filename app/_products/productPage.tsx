@@ -46,6 +46,8 @@ const ProductPage = (props: ProductPageProps) => {
     product.title.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
+
+  
   const totalPages = filteredProducts
     ? Math.ceil(filteredProducts.length / ITEMS_PER_PAGE)
     : 0;
