@@ -6,6 +6,7 @@ import Image from "next/image";
 import { formatPrice } from "../_libs/utils";
 import { MinusCircleFilled, PlusCircleFilled } from "@ant-design/icons";
 import { X } from "lucide-react";
+import CartIcon from "./Ui/cartIcon";
 
 interface CartProps {
   isOpen: boolean;
@@ -56,20 +57,8 @@ const Cart = (props: CartProps) => {
             {items.length === 0 && (
               <div className="flex flex-col items-center justify-center flex-1 p-8">
                 <div className="w-24 h-24 rounded-full bg-gray-100 flex items-center justify-center mb-4">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-12 w-12 text-gray-400"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={1.5}
-                      d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"
-                    />
-                  </svg>
+                <CartIcon/>
+                  
                 </div>
                 <p className="text-lg font-medium text-gray-900">
                   Your cart is empty
